@@ -1,0 +1,4 @@
+commit 49b554a8bcdab4c0fd127cb7b2db7543738f5052
+Author: Frederic Pillon <frederic.pillon@st.com>
+
+    chore: bump release version to 2.8.0

@@ -1,0 +1,125 @@
+# See: https://arduino.github.io/arduino-cli/latest/platform-specification/
+
+menu.pnum=Board part number
+
+menu.xserial=U(S)ART support
+menu.usb=USB support (if available)
+menu.xusb=USB speed (if available)
+menu.virtio=Virtual serial support
+
+menu.opt=Optimize
+menu.dbg=Debug symbols and core logs
+menu.rtlib=C Runtime Library
+menu.upload_method=Upload method
+
+################################################################################
+# Nucleo 144 boards
+Nucleo_Boards.name=STM32 Boards
+Nucleo_Boards.build.core=arduino
+Nucleo_Boards.build.board=Nucleo_144
+Nucleo_Boards.build.variant_h=variant_{build.board}.h
+Nucleo_Boards.build.st_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+Nucleo_Boards.build.flash_offset=0x0
+Nucleo_Boards.upload.maximum_size=0
+Nucleo_Boards.upload.maximum_data_size=0
+Nucleo_Boards.programmer.default=stlink
+Nucleo_Boards.vid.0=0x0483
+Nucleo_Boards.vid.1=0x0483
+
+# STlink V1/V2.1/V3
+Nucleo_Boards.pid.1=0x3744
+Nucleo_Boards.vid.2=0x0483
+Nucleo_Boards.pid.2=0x3748
+Nucleo_Boards.vid.3=0x0483
+Nucleo_Boards.pid.3=0x374b
+Nucleo_Boards.vid.4=0x0483
+Nucleo_Boards.pid.4=0x374e
+Nucleo_Boards.vid.5=0x0483
+Nucleo_Boards.pid.5=0x374f
+Nucleo_Boards.vid.6=0x0483
+Nucleo_Boards.pid.6=0x3752
+Nucleo_Boards.vid.7=0x0483
+Nucleo_Boards.pid.7=0x3753
+
+# NUCLEO_H753ZI board
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI=Nucleo H753ZI
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.node=NODE_H753ZI
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.upload.maximum_size=2097152
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.upload.maximum_data_size=524288
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.mcu=cortex-m7
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.fpu=-mfpu=fpv4-sp-d16
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.float-abi=-mfloat-abi=hard
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.board=NUCLEO_H753ZI
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.series=STM32H7xx
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.product_line=STM32H753xx
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.variant=NUCLEO_H753ZI
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.build.variant_h=variant_NUCLEO_H753ZI.h
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.debug.server.openocd.scripts.2=target/stm32h7x.cfg
+Nucleo_Boards.menu.pnum.NUCLEO_H753ZI.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
+
+# Upload menu
+Nucleo_Boards.menu.upload_method.MassStorage=Mass Storage
+Nucleo_Boards.menu.upload_method.MassStorage.upload.protocol=
+Nucleo_Boards.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Nucleo_Boards.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
+Nucleo_Boards.menu.upload_method.swdMethod.upload.protocol=swd
+Nucleo_Boards.menu.upload_method.swdMethod.upload.options=
+Nucleo_Boards.menu.upload_method.swdMethod.upload.tool=stm32CubeProg
+
+Nucleo_Boards.menu.upload_method.serialMethod=STM32CubeProgrammer (Serial)
+Nucleo_Boards.menu.upload_method.serialMethod.upload.protocol=serial
+Nucleo_Boards.menu.upload_method.serialMethod.upload.options=-c {serial.port.file}
+Nucleo_Boards.menu.upload_method.serialMethod.upload.tool=stm32CubeProg
+
+Nucleo_Boards.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
+Nucleo_Boards.menu.upload_method.dfuMethod.upload.protocol=dfu
+Nucleo_Boards.menu.upload_method.dfuMethod.upload.options=-v {upload.vid} -p {upload.pid}
+Nucleo_Boards.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+# USB connectivity
+Nucleo_Boards.menu.usb.none=None
+Nucleo_Boards.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
+Nucleo_Boards.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+Nucleo_Boards.menu.usb.CDC=CDC (no generic 'Serial')
+Nucleo_Boards.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
+Nucleo_Boards.menu.usb.HID=HID (keyboard and mouse)
+Nucleo_Boards.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
+Nucleo_Boards.menu.xusb.FS=Low/Full Speed
+Nucleo_Boards.menu.xusb.HS=High Speed
+Nucleo_Boards.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
+Nucleo_Boards.menu.xusb.HSFS=High Speed in Full Speed mode
+Nucleo_Boards.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
+
+# Optimizations
+Nucleo_Boards.menu.opt.osstd=Smallest (-Os default)
+Nucleo_Boards.menu.opt.oslto=Smallest (-Os) with LTO
+Nucleo_Boards.menu.opt.oslto.build.flags.optimize=-Os -flto
+Nucleo_Boards.menu.opt.o1std=Fast (-O1)
+Nucleo_Boards.menu.opt.o1std.build.flags.optimize=-O1
+Nucleo_Boards.menu.opt.o1lto=Fast (-O1) with LTO
+Nucleo_Boards.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+Nucleo_Boards.menu.opt.o2std=Faster (-O2)
+Nucleo_Boards.menu.opt.o2std.build.flags.optimize=-O2
+Nucleo_Boards.menu.opt.o2lto=Faster (-O2) with LTO
+Nucleo_Boards.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+Nucleo_Boards.menu.opt.o3std=Fastest (-O3)
+Nucleo_Boards.menu.opt.o3std.build.flags.optimize=-O3
+Nucleo_Boards.menu.opt.o3lto=Fastest (-O3) with LTO
+Nucleo_Boards.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+Nucleo_Boards.menu.opt.ogstd=Debug (-Og)
+Nucleo_Boards.menu.opt.ogstd.build.flags.optimize=-Og
+Nucleo_Boards.menu.opt.o0std=No Optimization (-O0)
+Nucleo_Boards.menu.opt.o0std.build.flags.optimize=-O0
+
+
+# C Runtime Library
+Nucleo_Boards.menu.rtlib.nano=Newlib Nano (default)
+Nucleo_Boards.menu.rtlib.nanofp=Newlib Nano + Float Printf
+Nucleo_Boards.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+Nucleo_Boards.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+Nucleo_Boards.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+Nucleo_Boards.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+Nucleo_Boards.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+Nucleo_Boards.menu.rtlib.full=Newlib Standard
+Nucleo_Boards.menu.rtlib.full.build.flags.ldspecs=
