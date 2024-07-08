@@ -14,7 +14,7 @@ menu.upload_method=Upload method
 
 ################################################################################
 # Nucleo 144 boards
-Nucleo_Boards.name=STM32 Boards
+Nucleo_Boards.name=Nucleo Boards
 Nucleo_Boards.build.core=arduino
 Nucleo_Boards.build.board=Nucleo_144
 Nucleo_Boards.build.variant_h=variant_{build.board}.h
