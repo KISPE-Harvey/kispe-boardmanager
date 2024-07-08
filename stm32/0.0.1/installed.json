@@ -4,7 +4,7 @@
       "name": "KISPE",
       "maintainer": "KISPE",
       "websiteUrl": "https://www.kispe.co.uk/",
-      "Url": "https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json",
+      "Url": "https://raw.githubusercontent.com/KISPE-Harvey/kispe-boardmanager/main/stm32/package_KISPE_index.json",
       "email": "info@kispe.co.uk",
       "platforms": [
         {
@@ -13,7 +13,7 @@
           "version": "0.0.1",
           "deprecated": false,
           "category": "Contributed",
-          "url": "",
+          "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/stm32/KISPE-0.0.1.zip",
           "archiveFileName": "KISPE-0.0.1.zip",
           "checksum": "SHA-256:1004713e626f2f4918c5100a32cca1ddc4d79f7eee03a3913deb4f5b4e4e8656",
           "size": "47195814",
