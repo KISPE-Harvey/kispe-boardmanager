@@ -112,7 +112,6 @@ Nucleo_Boards.menu.opt.ogstd.build.flags.optimize=-Og
 Nucleo_Boards.menu.opt.o0std=No Optimization (-O0)
 Nucleo_Boards.menu.opt.o0std.build.flags.optimize=-O0
 
-
 # C Runtime Library
 Nucleo_Boards.menu.rtlib.nano=Newlib Nano (default)
 Nucleo_Boards.menu.rtlib.nanofp=Newlib Nano + Float Printf
@@ -123,3 +122,30 @@ Nucleo_Boards.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
 Nucleo_Boards.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
 Nucleo_Boards.menu.rtlib.full=Newlib Standard
 Nucleo_Boards.menu.rtlib.full.build.flags.ldspecs=
+
+## OSSAT
+
+OSSAT.name=OSSAT OBC
+OSSAT.build.core=arduino
+OSSAT.build.board=OSSAT
+OSSAT.build.product_line=STM32H753xx
+OSSAT.build.variant=OSSAT
+OSSAT.build.variant_h=variant_{build.board}.h
+OSSAT.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
+OSSAT.build.st_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+OSSAT.build.fpu=-mfpu=fpv4-sp-d16
+OSSAT.build.float-abi=-mfloat-abi=hard
+OSSAT.build.series=STM32H7xx
+OSSAT.build.mcu=cortex-m7
+OSSAT.build.flash_offset=0x0
+OSSAT.upload.maximum_size=0
+OSSAT.upload.maximum_data_size=0
+OSSAT.programmer.default=stlink
+OSSAT.debug.server.openocd.scripts.2=target/stm32h7x.cfg
+OSSAT.vid.0=0x0483
+OSSAT.pid.0=0x5740
+
+## these not sure are correct yet
+OSSAT.upload.maximum_size=2097152
+OSSAT.upload.maximum_data_size=524288
+
