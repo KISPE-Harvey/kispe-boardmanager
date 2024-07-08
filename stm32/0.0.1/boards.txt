@@ -127,7 +127,7 @@ Nucleo_Boards.menu.rtlib.full.build.flags.ldspecs=
 
 OSSAT.name=OSSAT OBC
 OSSAT.build.core=arduino
-OSSAT.build.board=OSSAT
+OSSAT.build.board=GENERIC_H753ZITX
 OSSAT.build.product_line=STM32H753xx
 OSSAT.build.variant=OSSAT
 OSSAT.build.variant_h=variant_{build.board}.h
