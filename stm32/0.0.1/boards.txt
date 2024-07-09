@@ -165,9 +165,6 @@ OSSAT.vid.7=0x0483
 OSSAT.pid.7=0x3753
 
 # Upload menu
-OSSAT.menu.upload_method.MassStorage=Mass Storage
-OSSAT.menu.upload_method.MassStorage.upload.protocol=
-OSSAT.menu.upload_method.MassStorage.upload.tool=massStorageCopy
 
 OSSAT.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
 OSSAT.menu.upload_method.swdMethod.upload.protocol=swd
@@ -230,4 +227,18 @@ OSSAT.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float
 OSSAT.menu.rtlib.full=Newlib Standard
 OSSAT.menu.rtlib.full.build.flags.ldspecs=
 
+# debug
+OSSAT.menu.dbg.none=None
+OSSAT.menu.dbg.enable_sym=Symbols Enabled (-g)
+OSSAT.menu.dbg.enable_sym.build.flags.debug=-g -DNDEBUG
+OSSAT.menu.dbg.enable_log=Core logs Enabled
+OSSAT.menu.dbg.enable_log.build.flags.debug=
+OSSAT.menu.dbg.enable_all=Core Logs and Symbols Enabled (-g)
+OSSAT.menu.dbg.enable_all.build.flags.debug=-g
+
+OSSAT.menu.xserial.generic=Enabled (generic 'Serial')
+OSSAT.menu.xserial.none=Enabled (no generic 'Serial')
+OSSAT.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
+OSSAT.menu.xserial.disabled=Disabled (No Serial support)
+OSSAT.menu.xserial.disabled.build.xSerial=
 
