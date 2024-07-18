@@ -135,7 +135,8 @@ OSSAT.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
 OSSAT.build.st_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
 OSSAT.build.fpu=-mfpu=fpv4-sp-d16
 OSSAT.build.float-abi=-mfloat-abi=hard
-OSSAT.build.series=STM32H7xx
+#OSSAT.build.series=STM32H7xx
+OSSAT.build.series= OSSAT
 OSSAT.build.mcu=cortex-m7
 OSSAT.build.flash_offset=0x0
 OSSAT.upload.maximum_size=0
