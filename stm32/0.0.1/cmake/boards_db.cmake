@@ -85,7 +85,7 @@ target_compile_options(NUCLEO_H753ZI_xusb_HSFS INTERFACE
 # GENERIC_H753ZITX
 # -----------------------------------------------------------------------------
 
-set(GENERIC_H753ZITX_VARIANT_PATH "${CMAKE_CURRENT_LIST_DIR}/../variants/OSSAT")
+set(GENERIC_H753ZITX_VARIANT_PATH "${CMAKE_CURRENT_LIST_DIR}/../variants/OSSAT/STM32H753ZIT")
 
 
 set(GENERIC_H753ZITX_MAXSIZE 2097152)
