@@ -26,6 +26,7 @@ Nucleo_Boards.programmer.default=stlink
 Nucleo_Boards.vid.0=0x0483
 Nucleo_Boards.vid.1=0x0483
 
+
 # STlink V1/V2.1/V3
 Nucleo_Boards.pid.1=0x3744
 Nucleo_Boards.vid.2=0x0483
@@ -124,14 +125,9 @@ Nucleo_Boards.menu.rtlib.full=Newlib Standard
 Nucleo_Boards.menu.rtlib.full.build.flags.ldspecs=
 
 ## OSSAT
-
 OSSAT.name=OSSAT OBC
 OSSAT.build.core=arduino
 OSSAT.build.board=GENERIC_H753ZITX
-OSSAT.build.product_line=STM32H753xx
-OSSAT.build.variant=OSSAT
-OSSAT.build.variant_h=variant_{build.board}.h
-OSSAT.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
 OSSAT.build.st_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
 OSSAT.build.fpu=-mfpu=fpv4-sp-d16
 OSSAT.build.float-abi=-mfloat-abi=hard
@@ -145,10 +141,6 @@ OSSAT.programmer.default=stlink
 OSSAT.debug.server.openocd.scripts.2=target/stm32h7x.cfg
 OSSAT.vid.0=0x0483
 OSSAT.pid.0=0x5740
-
-## these not sure are correct yet
-OSSAT.upload.maximum_size=2097152
-OSSAT.upload.maximum_data_size=524288
 
 # STlink V1/V2.1/V3
 OSSAT.pid.1=0x3744
@@ -164,6 +156,18 @@ OSSAT.vid.6=0x0483
 OSSAT.pid.6=0x3752
 OSSAT.vid.7=0x0483
 OSSAT.pid.7=0x3753
+
+
+# STM32H753ZI board
+OSSAT.menu.pnum.STM32H753ZIT=STM32H753ZIT
+OSSAT.menu.pnum.STM32H753ZIT.upload.maximum_size=2097152
+OSSAT.menu.pnum.STM32H753ZIT.upload.maximum_data_size=524288
+OSSAT.menu.pnum.STM32H753ZIT.build.board=STM32H753ZIT
+OSSAT.menu.pnum.STM32H753ZIT.build.product_line=STM32H753xx
+OSSAT.menu.pnum.STM32H753ZIT.build.variant=STM32H753ZIT
+OSSAT.menu.pnum.STM32H753ZIT.build.variant_h=variant_GENERIC_H753ZITX.h
+OSSAT.menu.pnum.STM32H753ZIT.debug.server.openocd.scripts.2=target/stm32h7x.cfg
+OSSAT.menu.pnum.STM32H753ZIT.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
 
 # Upload menu
 
