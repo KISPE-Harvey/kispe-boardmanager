@@ -1431,7 +1431,7 @@ uint32_t HardwareTimer::getTimerClkFreq()
    *   if APBx prescaler is 1,2 or 4, then TIMxCLK = HCLK,
    *   otherwise TIMxCLK = 4x PCLKx
    */
-#if defined(STM32F4xx) || defined(STM32F7xx)
+#if defined(STM32F4xx) || defined(STM32F7xx) || defined(OSSAT)
 #if !defined(STM32F405xx) && !defined(STM32F415xx) &&\
     !defined(STM32F407xx) && !defined(STM32F417xx)
   RCC_PeriphCLKInitTypeDef PeriphClkConfig = {};
