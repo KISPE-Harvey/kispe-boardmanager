@@ -12,8 +12,8 @@
                   "category": "Contributed",
                   "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/stm32/KISPE-0.0.1.zip?raw=true",
                   "archiveFileName": "KISPE-0.0.1.zip",
-                  "checksum": "SHA-256:6d1f16b8992f2abdd7193f1457f49e79ccd35c7bbb0c7ee998d708a403aab54d",
-                  "size": "47211808",
+                  "checksum": "SHA-256:ab6ef8f483e5ef8687190e2e796d8d96e5621700cecd6d1e96881fe5bf18bc9d",
+                  "size": "47211807",
                   "boards": [
                       {
                           "name": "Nucleo Boards"
