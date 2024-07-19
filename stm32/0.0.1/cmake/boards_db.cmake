@@ -85,7 +85,7 @@ target_compile_options(NUCLEO_H753ZI_xusb_HSFS INTERFACE
 # GENERIC_H753ZITX
 # -----------------------------------------------------------------------------
 
-set(GENERIC_H753ZITX_VARIANT_PATH "${CMAKE_CURRENT_LIST_DIR}/../variants/STM32H753ZIT")
+set(GENERIC_H753ZITX_VARIANT_PATH "${CMAKE_CURRENT_LIST_DIR}/../variants/OSSAT")
 
 
 set(GENERIC_H753ZITX_MAXSIZE 2097152)
@@ -101,8 +101,8 @@ target_compile_options(GENERIC_H753ZITX INTERFACE
   -mcpu=${GENERIC_H753ZITX_MCU}
 )
 target_compile_definitions(GENERIC_H753ZITX INTERFACE
-  "STM32H7xx"
-  #"OSSAT"
+  #"STM32H7xx"
+  "OSSAT"
 	"ARDUINO_GENERIC_H753ZITX"
 	"BOARD_NAME=\"GENERIC_H753ZITX\""
 	"BOARD_ID=GENERIC_H753ZITX"
