@@ -203,7 +203,7 @@
   #define LED_BUILTIN           PB0  // LD1
 #endif
 #define LED_GREEN               LED_BUILTIN
-#define LED_BLUE                PB7  // LD2
+#define LED_BLUE                PE1  // LD2
 #define LED_RED                 PB14 // LD3
 
 // On-board user button
