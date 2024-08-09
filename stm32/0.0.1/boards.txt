@@ -260,12 +260,39 @@ SATLL.build.float-abi=-mfloat-abi=hard
 SATLL.build.series=STM32H7xx
 SATLL.build.mcu=cortex-m7
 SATLL.build.flash_offset=0x0
-SATLL.upload.maximum_size=2097152
-SATLL.upload.maximum_data_size=884736
+SATLL.upload.maximum_size=0
+SATLL.upload.maximum_data_size=0
 SATLL.programmer.default=stlink
 SATLL.debug.server.openocd.scripts.2=target/stm32h7x.cfg
 SATLL.vid.0=0x0483
 SATLL.pid.0=0x5740
+
+# STlink V1/V2.1/V3
+SATLL.pid.1=0x3744
+SATLL.vid.2=0x0483
+SATLL.pid.2=0x3748
+SATLL.vid.3=0x0483
+SATLL.pid.3=0x374b
+SATLL.vid.4=0x0483
+SATLL.pid.4=0x374e
+SATLL.vid.5=0x0483
+SATLL.pid.5=0x374f
+SATLL.vid.6=0x0483
+SATLL.pid.6=0x3752
+SATLL.vid.7=0x0483
+SATLL.pid.7=0x3753
+
+
+# STM32H753VI board
+SATLL.menu.pnum.STM32H753VIT=STM32H753VIT
+SATLL.menu.pnum.STM32H753VIT.upload.maximum_size=2097152
+SATLL.menu.pnum.STM32H753VIT.upload.maximum_data_size=884736
+SATLL.menu.pnum.STM32H753VIT.build.board=GENERIC_H753VITX
+SATLL.menu.pnum.STM32H753VIT.build.product_line=STM32H753xx
+SATLL.menu.pnum.STM32H753VIT.build.variant=OSSAT
+SATLL.menu.pnum.STM32H753VIT.build.variant_h=variant_STM32H753VIT.h
+SATLL.menu.pnum.STM32H753VIT.debug.server.openocd.scripts.2=target/stm32h7x.cfg
+SATLL.menu.pnum.STM32H753VIT.debug.svd_file={runtime.tools.STM32_SVD.path}/svd/STM32H7xx/STM32H753.svd
 
 # Upload menu
 
