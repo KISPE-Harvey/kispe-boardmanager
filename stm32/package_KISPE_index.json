@@ -52,37 +52,37 @@
                         "version": "1.15.1"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-gcc"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-mklittlefs"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-elf2uf2"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-pioasm"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "1.0.1-base-3a57aed",
                         "name": "pqt-python3"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-openocd"
                       },
                       {
-                        "packager": "rp2040",
+                        "packager": "KISPE",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-picotool"
                       }
