@@ -124,6 +124,8 @@ Nucleo_Boards.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _prin
 Nucleo_Boards.menu.rtlib.full=Newlib Standard
 Nucleo_Boards.menu.rtlib.full.build.flags.ldspecs=
 
+######################################################################################################
+
 ## OSSAT
 OSSAT.name=OSSAT OBC
 OSSAT.build.core=arduino
@@ -246,3 +248,99 @@ OSSAT.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
 OSSAT.menu.xserial.disabled=Disabled (No Serial support)
 OSSAT.menu.xserial.disabled.build.xSerial=
 
+###############################################################################################################
+
+## SATLL
+SATLL.name=SATLL OBC
+SATLL.build.core=arduino
+SATLL.build.board=GENERIC_H753VITX
+SATLL.build.st_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+SATLL.build.fpu=-mfpu=fpv4-sp-d16
+SATLL.build.float-abi=-mfloat-abi=hard
+SATLL.build.series=STM32H7xx
+SATLL.build.mcu=cortex-m7
+SATLL.build.flash_offset=0x0
+SATLL.upload.maximum_size=2097152
+SATLL.upload.maximum_data_size=884736
+SATLL.programmer.default=stlink
+SATLL.debug.server.openocd.scripts.2=target/stm32h7x.cfg
+SATLL.vid.0=0x0483
+SATLL.pid.0=0x5740
+
+# Upload menu
+
+SATLL.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
+SATLL.menu.upload_method.swdMethod.upload.protocol=swd
+SATLL.menu.upload_method.swdMethod.upload.options=
+SATLL.menu.upload_method.swdMethod.upload.tool=stm32CubeProg
+
+SATLL.menu.upload_method.serialMethod=STM32CubeProgrammer (Serial)
+SATLL.menu.upload_method.serialMethod.upload.protocol=serial
+SATLL.menu.upload_method.serialMethod.upload.options=-c {serial.port.file}
+SATLL.menu.upload_method.serialMethod.upload.tool=stm32CubeProg
+
+SATLL.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
+SATLL.menu.upload_method.dfuMethod.upload.protocol=dfu
+SATLL.menu.upload_method.dfuMethod.upload.options=-v {upload.vid} -p {upload.pid}
+SATLL.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+# USB connectivity
+SATLL.menu.usb.none=None
+SATLL.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
+SATLL.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+SATLL.menu.usb.CDC=CDC (no generic 'Serial')
+SATLL.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
+SATLL.menu.usb.HID=HID (keyboard and mouse)
+SATLL.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
+SATLL.menu.xusb.FS=Low/Full Speed
+SATLL.menu.xusb.HS=High Speed
+SATLL.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
+SATLL.menu.xusb.HSFS=High Speed in Full Speed mode
+SATLL.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
+
+# Optimizations
+SATLL.menu.opt.osstd=Smallest (-Os default)
+SATLL.menu.opt.oslto=Smallest (-Os) with LTO
+SATLL.menu.opt.oslto.build.flags.optimize=-Os -flto
+SATLL.menu.opt.o1std=Fast (-O1)
+SATLL.menu.opt.o1std.build.flags.optimize=-O1
+SATLL.menu.opt.o1lto=Fast (-O1) with LTO
+SATLL.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+SATLL.menu.opt.o2std=Faster (-O2)
+SATLL.menu.opt.o2std.build.flags.optimize=-O2
+SATLL.menu.opt.o2lto=Faster (-O2) with LTO
+SATLL.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+SATLL.menu.opt.o3std=Fastest (-O3)
+SATLL.menu.opt.o3std.build.flags.optimize=-O3
+SATLL.menu.opt.o3lto=Fastest (-O3) with LTO
+SATLL.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+SATLL.menu.opt.ogstd=Debug (-Og)
+SATLL.menu.opt.ogstd.build.flags.optimize=-Og
+SATLL.menu.opt.o0std=No Optimization (-O0)
+SATLL.menu.opt.o0std.build.flags.optimize=-O0
+
+# C Runtime Library
+SATLL.menu.rtlib.nano=Newlib Nano (default)
+SATLL.menu.rtlib.nanofp=Newlib Nano + Float Printf
+SATLL.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+SATLL.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+SATLL.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+SATLL.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+SATLL.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+SATLL.menu.rtlib.full=Newlib Standard
+SATLL.menu.rtlib.full.build.flags.ldspecs=
+
+# debug
+SATLL.menu.dbg.none=None
+SATLL.menu.dbg.enable_sym=Symbols Enabled (-g)
+SATLL.menu.dbg.enable_sym.build.flags.debug=-g -DNDEBUG
+SATLL.menu.dbg.enable_log=Core logs Enabled
+SATLL.menu.dbg.enable_log.build.flags.debug=
+SATLL.menu.dbg.enable_all=Core Logs and Symbols Enabled (-g)
+SATLL.menu.dbg.enable_all.build.flags.debug=-g
+
+SATLL.menu.xserial.generic=Enabled (generic 'Serial')
+SATLL.menu.xserial.none=Enabled (no generic 'Serial')
+SATLL.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
+SATLL.menu.xserial.disabled=Disabled (No Serial support)
+SATLL.menu.xserial.disabled.build.xSerial=
