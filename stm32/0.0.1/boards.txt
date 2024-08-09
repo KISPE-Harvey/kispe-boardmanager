@@ -250,6 +250,24 @@ OSSAT.menu.xserial.disabled.build.xSerial=
 # -----------------------------------
 # Raspberry Pi Pico
 # -----------------------------------
+
+rpipico.menu.BoardModel=Model
+rpipico.menu.flash=Flash Size
+rpipico.menu.freq=CPU Speed
+rpipico.menu.opt=Optimize
+rpipico.menu.rtti=RTTI
+rpipico.menu.stackprotect=Stack Protector
+rpipico.menu.exceptions=C++ Exceptions
+rpipico.menu.dbgport=Debug Port
+rpipico.menu.dbglvl=Debug Level
+rpipico.menu.boot2=Boot Stage 2
+rpipico.menu.wificountry=WiFi Region
+rpipico.menu.usbstack=USB Stack
+rpipico.menu.ipbtstack=IP/Bluetooth Stack
+rpipico.menu.uploadmethod=Upload Method
+
+
+
 rpipico.name=Raspberry Pi Pico
 rpipico.vid.0=0x2e8a
 rpipico.pid.0=0x000a
