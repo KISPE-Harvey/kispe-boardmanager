@@ -1,2 +1,2 @@
 #pragma once
-#include "../../../rp2040/api/ArduinoAPI.h"
+#include "../../../ArduinoCore-API/api/ArduinoAPI.h"
