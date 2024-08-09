@@ -10,7 +10,7 @@
                   "architecture": "stm32",
                   "version": "0.0.1",
                   "category": "Contributed",
-                  "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/stm32/KISPE-0.0.1.zip?raw=true",
+                  "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/frankenstein/stm32/KISPE-0.0.1.zip?raw=true",
                   "archiveFileName": "KISPE-0.0.1.zip",
                   "checksum": "SHA-256:63ea9d755ef7ef9007727a7283c018ad95cf351bf64989466966a6b66fb00ed2",
                   "size": "64168364",
