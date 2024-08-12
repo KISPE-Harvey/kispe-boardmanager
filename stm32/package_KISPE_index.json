@@ -6,20 +6,23 @@
           "websiteURL": "https://www.kispe.co.uk/",
           "platforms": [
               {
-                  "name": "KISPE Space Boards",
+                  "name": "KISPE STM32",
                   "architecture": "stm32",
                   "version": "0.0.1",
                   "category": "Contributed",
-                  "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/stm32/KISPE-0.0.1.zip?raw=true",
-                  "archiveFileName": "KISPE-0.0.1.zip",
-                  "checksum": "SHA-256:34a2755a9305aaf536f714495e619d6931d4d33bf6698e1261a3c4301d50f983",
-                  "size": "47211082",
+                  "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/stm32/stm32/KISPE-STM-0.0.1.zip?raw=true",
+                  "archiveFileName": "KISPE-STM-0.0.1.zip",
+                  "checksum": "SHA-256:e7902fc140cb3909d201b140db7d3fd3336cc52568a1c6285f2930570a15c9a2",
+                  "size": "47100826",
                   "boards": [
                       {
                           "name": "Nucleo Boards"
                       },
                       {
                         "name": "OSSAT"
+                      },
+                      {
+                        "name": "SATLL"
                       }
                   ],
                   "toolsDependencies": [
