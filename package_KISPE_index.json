@@ -59,8 +59,8 @@
                     "category": "Contributed",
                     "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/rp2040/rp2040/KISPE-RP2040-0.0.1.zip?raw=true",
                     "archiveFileName": "KISPE-RP2040-0.0.1.zip",
-                    "checksum": "SHA-256:52ab18e02d6475d47bae01fb24e52c32ff729944a9391280d5cea0d9d2ea7db9",
-                    "size": "97905285",
+                    "checksum": "SHA-256:92c688a3e5ba83ceafc05908bd1f0c3f72c0cecc28fb7d81530d2c60c423e1f7",
+                    "size": "97774639",
                     "boards": [
                         {
                             "name": "Pi Pico"
@@ -71,37 +71,37 @@
                     ],
                     "toolsDependencies": [
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-gcc"
                       },
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-mklittlefs"
                       },
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-elf2uf2"
                       },
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-pioasm"
                       },
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "1.0.1-base-3a57aed",
                         "name": "pqt-python3"
                       },
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-openocd"
                       },
                       {
-                        "packager": "KISPE",
+                        "packager": "rp2040",
                         "version": "2.2.0-d04e724",
                         "name": "pqt-picotool"
                       }
