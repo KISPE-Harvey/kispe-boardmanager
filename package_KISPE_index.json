@@ -59,8 +59,8 @@
                     "category": "Contributed",
                     "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/rp2040/rp2040/KISPE-RP2040-0.0.1.zip?raw=true",
                     "archiveFileName": "KISPE-RP2040-0.0.1.zip",
-                    "checksum": "SHA-256:318806276f4b3928ae2583070cb21dba3a5f9adb900942e2692029b6441c6976",
-                    "size": "97905277",
+                    "checksum": "SHA-256:52ab18e02d6475d47bae01fb24e52c32ff729944a9391280d5cea0d9d2ea7db9",
+                    "size": "97905285",
                     "boards": [
                         {
                             "name": "Pi Pico"
