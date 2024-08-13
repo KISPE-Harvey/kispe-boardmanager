@@ -10,7 +10,7 @@
                   "architecture": "stm32",
                   "version": "0.0.1",
                   "category": "Contributed",
-                  "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/stm32/stm32/KISPE-STM-0.0.1.zip?raw=true",
+                  "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/stm32/KISPE-STM-0.0.1.zip?raw=true",
                   "archiveFileName": "KISPE-STM-0.0.1.zip",
                   "checksum": "SHA-256:e7902fc140cb3909d201b140db7d3fd3336cc52568a1c6285f2930570a15c9a2",
                   "size": "47100826",
@@ -57,10 +57,10 @@
                     "architecture": "rp2040",
                     "version": "0.0.1",
                     "category": "Contributed",
-                    "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/rp2040/rp2040/KISPE-RP2040-0.0.1.zip?raw=true",
+                    "url": "https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/rp2040/KISPE-RP2040-0.0.1.zip?raw=true",
                     "archiveFileName": "KISPE-RP2040-0.0.1.zip",
-                    "checksum": "SHA-256:92c688a3e5ba83ceafc05908bd1f0c3f72c0cecc28fb7d81530d2c60c423e1f7",
-                    "size": "97774639",
+                    "checksum": "SHA-256:ae72d7e5582095a18a388630b494240fc2a4081650b6f82d2ce87b80142914ec",
+                    "size": "97807045",
                     "boards": [
                         {
                             "name": "Pi Pico"
