@@ -200,15 +200,18 @@
 
 // On-board LED pin number
 #ifndef LED_BUILTIN
-  #define LED_BUILTIN           PB0  // LD1
+  #define LED_BUILTIN           PG6  // LD1
 #endif
-#define LED_GREEN               LED_BUILTIN
-#define LED_BLUE                PB7  // LD2
-#define LED_RED                 PB14 // LD3
+#define LED_1               LED_BUILTIN
+#define LED_2               PG7  // LD2
+#define LED_3               PG8 // LD3
 
 // On-board user button
-#ifndef USER_BTN
-  #define USER_BTN              PC13
+#ifndef USER_BTN1
+  #define USER_BTN1             PC6
+#endif
+#ifndef USER_BTN2
+  #define USER_BTN2             PC4
 #endif
 
 // Timer Definitions
