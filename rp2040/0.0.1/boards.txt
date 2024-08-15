@@ -1331,110 +1331,110 @@ MBoard.menu.freq.240.build.f_cpu=240000000L
 MBoard.menu.freq.250=250 MHz (Overclock)
 MBoard.menu.freq.250.build.f_cpu=250000000L
 MBoard.menu.freq.275=275 MHz (Overclock)
-MBoardmenu.freq.275.build.f_cpu=275000000L
-MBoardmenu.freq.300=300 MHz (Overclock)
-MBoardmenu.freq.300.build.f_cpu=300000000L
-MBoardmenu.opt.Small=Small (-Os) (standard)
-MBoardmenu.opt.Small.build.flags.optimize=-Os
-MBoardmenu.opt.Optimize=Optimize (-O)
-MBoardmenu.opt.Optimize.build.flags.optimize=-O
-MBoardmenu.opt.Optimize2=Optimize More (-O2)
-MBoardmenu.opt.Optimize2.build.flags.optimize=-O2
-MBoardmenu.opt.Optimize3=Optimize Even More (-O3)
-MBoardmenu.opt.Optimize3.build.flags.optimize=-O3
-MBoardmenu.opt.Fast=Fast (-Ofast) (maybe slower)
-MBoardmenu.opt.Fast.build.flags.optimize=-Ofast
-MBoardmenu.opt.Debug=Debug (-Og)
-MBoardmenu.opt.Debug.build.flags.optimize=-Og
-MBoardmenu.rtti.Disabled=Disabled
-MBoardmenu.rtti.Disabled.build.flags.rtti=-fno-rtti
-MBoardmenu.rtti.Enabled=Enabled
-MBoardmenu.rtti.Enabled.build.flags.rtti=
-MBoardmenu.stackprotect.Disabled=Disabled
-MBoardmenu.stackprotect.Disabled.build.flags.stackprotect=
-MBoardmenu.stackprotect.Enabled=Enabled
-MBoardmenu.stackprotect.Enabled.build.flags.stackprotect=-fstack-protector
-MBoardmenu.exceptions.Disabled=Disabled
-MBoardmenu.exceptions.Disabled.build.flags.exceptions=-fno-exceptions
-MBoardmenu.exceptions.Disabled.build.flags.libstdcpp=-lstdc++
-MBoardmenu.exceptions.Enabled=Enabled
-MBoardmenu.exceptions.Enabled.build.flags.exceptions=-fexceptions
-MBoardmenu.exceptions.Enabled.build.flags.libstdcpp=-lstdc++-exc
-MBoardmenu.dbgport.Disabled=Disabled
-MBoardmenu.dbgport.Disabled.build.debug_port=
-MBoardmenu.dbgport.Serial=Serial
-MBoardmenu.dbgport.Serial.build.debug_port=-DDEBUG_RP2040_PORT=Serial
-MBoardmenu.dbgport.Serial1=Serial1
-MBoardmenu.dbgport.Serial1.build.debug_port=-DDEBUG_RP2040_PORT=Serial1
-MBoardmenu.dbgport.Serial2=Serial2
-MBoardmenu.dbgport.Serial2.build.debug_port=-DDEBUG_RP2040_PORT=Serial2
-MBoardmenu.dbglvl.None=None
-MBoardmenu.dbglvl.None.build.debug_level=
-MBoardmenu.dbglvl.Core=Core
-MBoardmenu.dbglvl.Core.build.debug_level=-DDEBUG_RP2040_CORE
-MBoardmenu.dbglvl.SPI=SPI
-MBoardmenu.dbglvl.SPI.build.debug_level=-DDEBUG_RP2040_SPI
-MBoardmenu.dbglvl.Wire=Wire
-MBoardmenu.dbglvl.Wire.build.debug_level=-DDEBUG_RP2040_WIRE
-MBoardmenu.dbglvl.Bluetooth=Bluetooth
-MBoardmenu.dbglvl.Bluetooth.build.debug_level=-DDEBUG_RP2040_BLUETOOTH
-MBoardmenu.dbglvl.All=All
-MBoardmenu.dbglvl.All.build.debug_level=-DDEBUG_RP2040_WIRE -DDEBUG_RP2040_SPI -DDEBUG_RP2040_CORE -DDEBUG_RP2040_BLUETOOTH
-MBoardmenu.dbglvl.NDEBUG=NDEBUG
-MBoardmenu.dbglvl.NDEBUG.build.debug_level=-DNDEBUG
-MBoardmenu.usbstack.picosdk=Pico SDK
-MBoardmenu.usbstack.picosdk.build.usbstack_flags=
-MBoardmenu.usbstack.tinyusb=Adafruit TinyUSB
-MBoardmenu.usbstack.tinyusb.build.usbstack_flags=-DUSE_TINYUSB "-I{runtime.platform.path}/libraries/Adafruit_TinyUSB_Arduino/src/arduino"
-MBoardmenu.usbstack.tinyusb_host=Adafruit TinyUSB Host (native)
-MBoardmenu.usbstack.tinyusb_host.build.usbstack_flags=-DUSE_TINYUSB -DUSE_TINYUSB_HOST "-I{runtime.platform.path}/libraries/Adafruit_TinyUSB_Arduino/src/arduino"
-MBoardmenu.usbstack.nousb=No USB
-MBoardmenu.usbstack.nousb.build.usbstack_flags="-DNO_USB -DDISABLE_USB_SERIAL -I{runtime.platform.path}/tools/libpico"
-MBoardmenu.ipbtstack.ipv4only=IPv4 Only
-MBoardmenu.ipbtstack.ipv4only.build.libpicow=libpicow-noipv6-nobtc-noble.a
-MBoardmenu.ipbtstack.ipv4only.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1
-MBoardmenu.ipbtstack.ipv4ipv6=IPv4 + IPv6
-MBoardmenu.ipbtstack.ipv4ipv6.build.libpicow=libpicow-ipv6-nobtc-noble.a
-MBoardmenu.ipbtstack.ipv4ipv6.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1
-MBoardmenu.ipbtstack.ipv4btcble=IPv4 + Bluetooth
-MBoardmenu.ipbtstack.ipv4btcble.build.libpicow=libpicow-noipv6-btc-ble.a
-MBoardmenu.ipbtstack.ipv4btcble.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1
-MBoardmenu.ipbtstack.ipv4ipv6btcble=IPv4 + IPv6 + Bluetooth
-MBoardmenu.ipbtstack.ipv4ipv6btcble.build.libpicow=libpicow-ipv6-btc-ble.a
-MBoardmenu.ipbtstack.ipv4ipv6btcble.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1
-MBoardmenu.ipbtstack.ipv4onlybig=IPv4 Only - 32K
-MBoardmenu.ipbtstack.ipv4onlybig.build.libpicow=libpicow-noipv6-nobtc-noble-big.a
-MBoardmenu.ipbtstack.ipv4onlybig.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1 -D__LWIP_MEMMULT=2
-MBoardmenu.ipbtstack.ipv4ipv6big=IPv4 + IPv6 - 32K
-MBoardmenu.ipbtstack.ipv4ipv6big.build.libpicow=libpicow-ipv6-nobtc-noble-big.a
-MBoardmenu.ipbtstack.ipv4ipv6big.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1 -D__LWIP_MEMMULT=2
-MBoardmenu.ipbtstack.ipv4btcblebig=IPv4 + Bluetooth - 32K
-MBoardmenu.ipbtstack.ipv4btcblebig.build.libpicow=libpicow-noipv6-btc-ble-big.a
-MBoardmenu.ipbtstack.ipv4btcblebig.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1 -D__LWIP_MEMMULT=2
-MBoardmenu.ipbtstack.ipv4ipv6btcblebig=IPv4 + IPv6 + Bluetooth - 32K
-MBoardmenu.ipbtstack.ipv4ipv6btcblebig.build.libpicow=libpicow-ipv6-btc-ble-big.a
-MBoardmenu.ipbtstack.ipv4ipv6btcblebig.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1 -D__LWIP_MEMMULT=2
-MBoardmenu.boot2.boot2_generic_03h_2_padded_checksum=Generic SPI /2
-MBoardmenu.boot2.boot2_generic_03h_2_padded_checksum.build.boot2=boot2_generic_03h_2_padded_checksum
-MBoardmenu.boot2.boot2_generic_03h_4_padded_checksum=Generic SPI /4
-MBoardmenu.boot2.boot2_generic_03h_4_padded_checksum.build.boot2=boot2_generic_03h_4_padded_checksum
-MBoardmenu.boot2.boot2_is25lp080_2_padded_checksum=IS25LP080 QSPI /2
-MBoardmenu.boot2.boot2_is25lp080_2_padded_checksum.build.boot2=boot2_is25lp080_2_padded_checksum
-MBoardmenu.boot2.boot2_is25lp080_4_padded_checksum=IS25LP080 QSPI /4
-MBoardmenu.boot2.boot2_is25lp080_4_padded_checksum.build.boot2=boot2_is25lp080_4_padded_checksum
-MBoardmenu.boot2.boot2_w25q080_2_padded_checksum=W25Q080 QSPI /2
-MBoardmenu.boot2.boot2_w25q080_2_padded_checksum.build.boot2=boot2_w25q080_2_padded_checksum
-MBoardmenu.boot2.boot2_w25q080_4_padded_checksum=W25Q080 QSPI /4
-MBoardmenu.boot2.boot2_w25q080_4_padded_checksum.build.boot2=boot2_w25q080_4_padded_checksum
-MBoardmenu.boot2.boot2_w25x10cl_2_padded_checksum=W25X10CL QSPI /2
-MBoardmenu.boot2.boot2_w25x10cl_2_padded_checksum.build.boot2=boot2_w25x10cl_2_padded_checksum
-MBoardmenu.boot2.boot2_w25x10cl_4_padded_checksum=W25X10CL QSPI /4
-MBoardmenu.boot2.boot2_w25x10cl_4_padded_checksum.build.boot2=boot2_w25x10cl_4_padded_checksum
-MBoardmenu.boot2.boot2_w25q64jv_4_padded_checksum=W25Q64JV QSPI /4
-MBoardmenu.boot2.boot2_w25q64jv_4_padded_checksum.build.boot2=boot2_w25q64jv_4_padded_checksum
-MBoardmenu.boot2.boot2_w25q16jvxq_4_padded_checksum=W25Q16JVxQ QSPI /4
-MBoardmenu.boot2.boot2_w25q16jvxq_4_padded_checksum.build.boot2=boot2_w25q16jvxq_4_padded_checksum
-MBoardmenu.boot2.boot2_w25q128jvxq_4_padded_checksum=W25Q128JV QSPI /4
+MBoard.menu.freq.275.build.f_cpu=275000000L
+MBoard.menu.freq.300=300 MHz (Overclock)
+MBoard.menu.freq.300.build.f_cpu=300000000L
+MBoard.menu.opt.Small=Small (-Os) (standard)
+MBoard.menu.opt.Small.build.flags.optimize=-Os
+MBoard.menu.opt.Optimize=Optimize (-O)
+MBoard.menu.opt.Optimize.build.flags.optimize=-O
+MBoard.menu.opt.Optimize2=Optimize More (-O2)
+MBoard.menu.opt.Optimize2.build.flags.optimize=-O2
+MBoard.menu.opt.Optimize3=Optimize Even More (-O3)
+MBoard.menu.opt.Optimize3.build.flags.optimize=-O3
+MBoard.menu.opt.Fast=Fast (-Ofast) (maybe slower)
+MBoard.menu.opt.Fast.build.flags.optimize=-Ofast
+MBoard.menu.opt.Debug=Debug (-Og)
+MBoard.menu.opt.Debug.build.flags.optimize=-Og
+MBoard.menu.rtti.Disabled=Disabled
+MBoard.menu.rtti.Disabled.build.flags.rtti=-fno-rtti
+MBoard.menu.rtti.Enabled=Enabled
+MBoard.menu.rtti.Enabled.build.flags.rtti=
+MBoard.menu.stackprotect.Disabled=Disabled
+MBoard.menu.stackprotect.Disabled.build.flags.stackprotect=
+MBoard.menu.stackprotect.Enabled=Enabled
+MBoard.menu.stackprotect.Enabled.build.flags.stackprotect=-fstack-protector
+MBoard.menu.exceptions.Disabled=Disabled
+MBoard.menu.exceptions.Disabled.build.flags.exceptions=-fno-exceptions
+MBoard.menu.exceptions.Disabled.build.flags.libstdcpp=-lstdc++
+MBoard.menu.exceptions.Enabled=Enabled
+MBoard.menu.exceptions.Enabled.build.flags.exceptions=-fexceptions
+MBoard.menu.exceptions.Enabled.build.flags.libstdcpp=-lstdc++-exc
+MBoard.menu.dbgport.Disabled=Disabled
+MBoard.menu.dbgport.Disabled.build.debug_port=
+MBoard.menu.dbgport.Serial=Serial
+MBoard.menu.dbgport.Serial.build.debug_port=-DDEBUG_RP2040_PORT=Serial
+MBoard.menu.dbgport.Serial1=Serial1
+MBoard.menu.dbgport.Serial1.build.debug_port=-DDEBUG_RP2040_PORT=Serial1
+MBoard.menu.dbgport.Serial2=Serial2
+MBoard.menu.dbgport.Serial2.build.debug_port=-DDEBUG_RP2040_PORT=Serial2
+MBoard.menu.dbglvl.None=None
+MBoard.menu.dbglvl.None.build.debug_level=
+MBoard.menu.dbglvl.Core=Core
+MBoard.menu.dbglvl.Core.build.debug_level=-DDEBUG_RP2040_CORE
+MBoard.menu.dbglvl.SPI=SPI
+MBoard.menu.dbglvl.SPI.build.debug_level=-DDEBUG_RP2040_SPI
+MBoard.menu.dbglvl.Wire=Wire
+MBoard.menu.dbglvl.Wire.build.debug_level=-DDEBUG_RP2040_WIRE
+MBoard.menu.dbglvl.Bluetooth=Bluetooth
+MBoard.menu.dbglvl.Bluetooth.build.debug_level=-DDEBUG_RP2040_BLUETOOTH
+MBoard.menu.dbglvl.All=All
+MBoard.menu.dbglvl.All.build.debug_level=-DDEBUG_RP2040_WIRE -DDEBUG_RP2040_SPI -DDEBUG_RP2040_CORE -DDEBUG_RP2040_BLUETOOTH
+MBoard.menu.dbglvl.NDEBUG=NDEBUG
+MBoard.menu.dbglvl.NDEBUG.build.debug_level=-DNDEBUG
+MBoard.menu.usbstack.picosdk=Pico SDK
+MBoard.menu.usbstack.picosdk.build.usbstack_flags=
+MBoard.menu.usbstack.tinyusb=Adafruit TinyUSB
+MBoard.menu.usbstack.tinyusb.build.usbstack_flags=-DUSE_TINYUSB "-I{runtime.platform.path}/libraries/Adafruit_TinyUSB_Arduino/src/arduino"
+MBoard.menu.usbstack.tinyusb_host=Adafruit TinyUSB Host (native)
+MBoard.menu.usbstack.tinyusb_host.build.usbstack_flags=-DUSE_TINYUSB -DUSE_TINYUSB_HOST "-I{runtime.platform.path}/libraries/Adafruit_TinyUSB_Arduino/src/arduino"
+MBoard.menu.usbstack.nousb=No USB
+MBoard.menu.usbstack.nousb.build.usbstack_flags="-DNO_USB -DDISABLE_USB_SERIAL -I{runtime.platform.path}/tools/libpico"
+MBoard.menu.ipbtstack.ipv4only=IPv4 Only
+MBoard.menu.ipbtstack.ipv4only.build.libpicow=libpicow-noipv6-nobtc-noble.a
+MBoard.menu.ipbtstack.ipv4only.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1
+MBoard.menu.ipbtstack.ipv4ipv6=IPv4 + IPv6
+MBoard.menu.ipbtstack.ipv4ipv6.build.libpicow=libpicow-ipv6-nobtc-noble.a
+MBoard.menu.ipbtstack.ipv4ipv6.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1
+MBoard.menu.ipbtstack.ipv4btcble=IPv4 + Bluetooth
+MBoard.menu.ipbtstack.ipv4btcble.build.libpicow=libpicow-noipv6-btc-ble.a
+MBoard.menu.ipbtstack.ipv4btcble.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1
+MBoard.menu.ipbtstack.ipv4ipv6btcble=IPv4 + IPv6 + Bluetooth
+MBoard.menu.ipbtstack.ipv4ipv6btcble.build.libpicow=libpicow-ipv6-btc-ble.a
+MBoard.menu.ipbtstack.ipv4ipv6btcble.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1
+MBoard.menu.ipbtstack.ipv4onlybig=IPv4 Only - 32K
+MBoard.menu.ipbtstack.ipv4onlybig.build.libpicow=libpicow-noipv6-nobtc-noble-big.a
+MBoard.menu.ipbtstack.ipv4onlybig.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1 -D__LWIP_MEMMULT=2
+MBoard.menu.ipbtstack.ipv4ipv6big=IPv4 + IPv6 - 32K
+MBoard.menu.ipbtstack.ipv4ipv6big.build.libpicow=libpicow-ipv6-nobtc-noble-big.a
+MBoard.menu.ipbtstack.ipv4ipv6big.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1 -D__LWIP_MEMMULT=2
+MBoard.menu.ipbtstack.ipv4btcblebig=IPv4 + Bluetooth - 32K
+MBoard.menu.ipbtstack.ipv4btcblebig.build.libpicow=libpicow-noipv6-btc-ble-big.a
+MBoard.menu.ipbtstack.ipv4btcblebig.build.libpicowdefs=-DLWIP_IPV6=0 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1 -D__LWIP_MEMMULT=2
+MBoard.menu.ipbtstack.ipv4ipv6btcblebig=IPv4 + IPv6 + Bluetooth - 32K
+MBoard.menu.ipbtstack.ipv4ipv6btcblebig.build.libpicow=libpicow-ipv6-btc-ble-big.a
+MBoard.menu.ipbtstack.ipv4ipv6btcblebig.build.libpicowdefs=-DLWIP_IPV6=1 -DLWIP_IPV4=1 -DENABLE_CLASSIC=1 -DENABLE_BLE=1 -D__LWIP_MEMMULT=2
+MBoard.menu.boot2.boot2_generic_03h_2_padded_checksum=Generic SPI /2
+MBoard.menu.boot2.boot2_generic_03h_2_padded_checksum.build.boot2=boot2_generic_03h_2_padded_checksum
+MBoard.menu.boot2.boot2_generic_03h_4_padded_checksum=Generic SPI /4
+MBoard.menu.boot2.boot2_generic_03h_4_padded_checksum.build.boot2=boot2_generic_03h_4_padded_checksum
+MBoard.menu.boot2.boot2_is25lp080_2_padded_checksum=IS25LP080 QSPI /2
+MBoard.menu.boot2.boot2_is25lp080_2_padded_checksum.build.boot2=boot2_is25lp080_2_padded_checksum
+MBoard.menu.boot2.boot2_is25lp080_4_padded_checksum=IS25LP080 QSPI /4
+MBoard.menu.boot2.boot2_is25lp080_4_padded_checksum.build.boot2=boot2_is25lp080_4_padded_checksum
+MBoard.menu.boot2.boot2_w25q080_2_padded_checksum=W25Q080 QSPI /2
+MBoard.menu.boot2.boot2_w25q080_2_padded_checksum.build.boot2=boot2_w25q080_2_padded_checksum
+MBoard.menu.boot2.boot2_w25q080_4_padded_checksum=W25Q080 QSPI /4
+MBoard.menu.boot2.boot2_w25q080_4_padded_checksum.build.boot2=boot2_w25q080_4_padded_checksum
+MBoard.menu.boot2.boot2_w25x10cl_2_padded_checksum=W25X10CL QSPI /2
+MBoard.menu.boot2.boot2_w25x10cl_2_padded_checksum.build.boot2=boot2_w25x10cl_2_padded_checksum
+MBoard.menu.boot2.boot2_w25x10cl_4_padded_checksum=W25X10CL QSPI /4
+MBoard.menu.boot2.boot2_w25x10cl_4_padded_checksum.build.boot2=boot2_w25x10cl_4_padded_checksum
+MBoard.menu.boot2.boot2_w25q64jv_4_padded_checksum=W25Q64JV QSPI /4
+MBoard.menu.boot2.boot2_w25q64jv_4_padded_checksum.build.boot2=boot2_w25q64jv_4_padded_checksum
+MBoard.menu.boot2.boot2_w25q16jvxq_4_padded_checksum=W25Q16JVxQ QSPI /4
+MBoard.menu.boot2.boot2_w25q16jvxq_4_padded_checksum.build.boot2=boot2_w25q16jvxq_4_padded_checksum
+MBoard.menu.boot2.boot2_w25q128jvxq_4_padded_checksum=W25Q128JV QSPI /4
 MBoard.menu.boot2.boot2_w25q128jvxq_4_padded_checksum.build.boot2=boot2_w25q128jvxq_4_padded_checksum
 MBoard.menu.uploadmethod.default=Default (UF2)
 MBoard.menu.uploadmethod.default.build.ram_length=256k
