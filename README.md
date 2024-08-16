@@ -26,6 +26,8 @@ Utilizing the STM32H753VIT6
 
 ## RP2040
 
+based upon - LINK
+
 #### SATLL Motor Board
 
-based upon - LINK
+<img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/rp2040.png" width = 30% height = 30%>
