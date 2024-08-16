@@ -9,8 +9,8 @@ based upon the stm32duino core supporting custom board profile for KISPE space b
 | Nucleo Boards| OSSAT DEV | SATLL |
 | --- | --- | --- |
 | Nucleo H753ZIT | STM32H753ZIT | STM32H753VIT | RP2040 | 
-| <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/nucleo-h753zit.png" width = 30% height = 30%> | <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/ossat-dev.png" width = 30% height = 30%> | <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/stm32h7vit.jpg" width = 30% height = 30%> | 
-||||<img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/rp2040.png" width = 30% height = 30%> |
+| <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/nucleo-h753zit.png" width = 30% height = 30%> | <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/ossat-dev.png" width = 30% height = 30%> | <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/stm32h7vit.jpg" width = 30% height = 30%> <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/rp2040.png" width = 30% height = 30%> | 
+
 
 #### Nucleo-H753ZIT
 <img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/nucleo-h753zit.png" width = 30% height = 30%>
