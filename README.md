@@ -15,7 +15,7 @@ based upon the stm32duino core supporting custom board profile for KISPE space b
 #### OSSAT DEV Board
 Utilizing the STM32H753ZIT6
 
-<img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/stm32h7vit.jpg" width = 30% height = 30%>
+<img src="https://github.com/KISPE-Harvey/kispe-boardmanager/blob/main/assets/img/ossat-dev.png" width = 30% height = 30%>
 
 
 #### SATLL
