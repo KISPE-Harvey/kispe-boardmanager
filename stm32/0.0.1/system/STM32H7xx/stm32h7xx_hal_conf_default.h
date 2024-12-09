@@ -32,10 +32,11 @@ extern "C" {
   *        and manage module deactivation
   */
 #include "stm32yyxx_hal_conf.h"
-#if 0
+//#if 0
 /**
   * @brief This is the list of modules to be used in the HAL driver
   */
+
 #define HAL_MODULE_ENABLED
 #define HAL_ADC_MODULE_ENABLED
 #define HAL_CEC_MODULE_ENABLED
@@ -99,7 +100,7 @@ extern "C" {
 #define HAL_UART_MODULE_ENABLED
 #define HAL_USART_MODULE_ENABLED
 #define HAL_WWDG_MODULE_ENABLED
-#endif
+//#endif
 
 /* ########################## Oscillator Values adaptation ####################*/
 /**

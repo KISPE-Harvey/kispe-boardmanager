@@ -64,7 +64,7 @@ typedef struct
                                   This parameter can be a value of @ref QSPI_ChipSelectHighTime */
   uint32_t ClockMode;          /* Specifies the Clock Mode. It indicates the level that clock takes between commands.
                                   This parameter can be a value of @ref QSPI_ClockMode */
-  uint32_t FlashID;            /* Specifies the Flash which will be used,
+  uint32_t FlashID ;            /* Specifies the Flash which will be used,
                                   This parameter can be a value of @ref QSPI_Flash_Select */
   uint32_t DualFlash;          /* Specifies the Dual Flash Mode State
                                   This parameter can be a value of @ref QSPI_DualFlash_Mode */
@@ -276,6 +276,7 @@ typedef void (*pQSPI_CallbackTypeDef)(QSPI_HandleTypeDef *hqspi);
   */
 #define QSPI_FLASH_ID_1                0x00000000U                 /*!<FLASH 1 selected*/
 #define QSPI_FLASH_ID_2                ((uint32_t)QUADSPI_CR_FSEL) /*!<FLASH 2 selected*/
+
 /**
   * @}
   */
