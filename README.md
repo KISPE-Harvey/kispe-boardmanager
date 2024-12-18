@@ -1,5 +1,10 @@
 # KISPE Arduino Board Manager
 
+Install link
+```
+https://raw.githubusercontent.com/KISPE-Harvey/kispe-boardmanager/refs/heads/main/package_KISPE_index.json
+```
+
 ## STM32 
 based upon the stm32duino core supporting custom board profile for KISPE space boards and test equipment.
 
