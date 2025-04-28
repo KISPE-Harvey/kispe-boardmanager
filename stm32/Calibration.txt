@@ -1,0 +1,12 @@
+Calibrating IMU - BMI270
+https://docs.sparkfun.com/SparkFun_Qwiic_6DoF_BMI270/examples/#example-6-calibration-to-nvm
+Sparkfun Arduino library has a calibration example code.
+- Let sensors/satellite sit and have the sensors read the values to estimate an offset
+
+
+Calibrating Magnetometer - MLX90393
+https://learn.adafruit.com/adafruit-sensorlab-magnetometer-calibration/
+Adafruit provide a library called Adafruit_Sensor_Lab to calculate a quick set of calibration values
+
+or can use Paul Stoffregen's interactive 3D calibration tool following this link  
+ https://learn.adafruit.com/adafruit-sensorlab-magnetometer-calibration/
